@@ -19,7 +19,6 @@ define(function(require) {
 
 		render: function() {
 			var data = this.model.toJSON();
-			console.log(data);
 	        var template = Handlebars.templates["shadow-ids"];
 	        this.$el.html(template(data));
 	        return this;
