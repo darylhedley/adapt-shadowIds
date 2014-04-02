@@ -1,0 +1,29 @@
+.shadow-ids {
+    background-color:@transparency;
+    color:#000;
+    .ie8 & {
+        background-image:@transparency-fallback-png;
+    }
+    position:absolute;
+    top:0px;
+    .article & {
+    	left:50%;
+    }
+    .block & {
+    	left:0px;
+    	right:auto;
+    }
+    .component & {
+    	left:auto;
+    	right:0px;
+    }
+    
+}
+
+.shadow-id-container {
+    position:relative;
+}
+
+.shadow-ids-inner {
+    padding:4px;
+}
