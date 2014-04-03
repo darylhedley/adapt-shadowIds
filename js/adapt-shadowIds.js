@@ -14,6 +14,7 @@ define(function(require) {
 		className: "shadow-ids",
 
 		initialize: function() {
+			this.listenTo(Adapt, 'remove', this.remove);
 			this.render();
 		},
 
